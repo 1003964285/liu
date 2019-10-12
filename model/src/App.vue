@@ -1,7 +1,9 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
-    <router-view/>
+  	<router-link to="/shouye">首页</router-link>
+  	<router-link to="/goods">产品</router-link>
+  	<router-link to="/shezhi">设置</router-link>
+    <router-view />
   </div>
 </template>
 
