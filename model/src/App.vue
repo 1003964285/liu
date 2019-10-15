@@ -1,8 +1,8 @@
 <template>
   <div id="app">
-  	<router-link to="/shouye">首页</router-link>
-  	<router-link to="/goods">产品</router-link>
-  	<router-link to="/shezhi">设置</router-link>
+  	<router-link to="/shouye" activeClass="active">首页</router-link>
+  	<router-link to="/goods" activeClass="active">产品</router-link>
+  	<router-link to="/shezhi" activeClass="active">设置</router-link>
     <router-view />
   </div>
 </template>
@@ -21,5 +21,8 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+}
+.active{
+	color:red;
 }
 </style>

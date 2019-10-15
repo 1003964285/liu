@@ -1,6 +1,8 @@
 <template>
   <div class="shouye">
     这里是产品页
+    <el-amap ref="map" vid="amapDemo"  :center="center" :zoom="zoom"   class="amap-demo">
+      </el-amap>
   </div>
 </template>
 
@@ -9,6 +11,8 @@ export default {
   name: 'shouye',
   data () {
     return {
+          zoom: 12,
+          center: [121.59996, 31.197646],
       msg: 'Welcome to Your Vue.js App'
     }
   }
